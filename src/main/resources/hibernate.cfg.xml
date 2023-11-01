@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+    <session-factory>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/airafrika</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">password770</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="current_session_context_class">thread</property>
+        <property name="show_sql">false</property>
+        <property name="format_sql">false</property>
+        <property name="hbm2ddl.auto">update</property>
+
+
+
+        <mapping class="com.yc.airafrika_version_2.Entity.Admin" />
+        <mapping class="com.yc.airafrika_version_2.Entity.Passenger" />
+        <mapping class="com.yc.airafrika_version_2.Entity.Airplane" />
+        <mapping class="com.yc.airafrika_version_2.Entity.Airport" />
+        <mapping class="com.yc.airafrika_version_2.Entity.Baggage" />
+        <mapping class="com.yc.airafrika_version_2.Entity.Booking" />
+        <mapping class="com.yc.airafrika_version_2.Entity.Escale" />
+        <mapping class="com.yc.airafrika_version_2.Entity.Extra" />
+        <mapping class="com.yc.airafrika_version_2.Entity.Flight" />
+
+    </session-factory>
+</hibernate-configuration>
